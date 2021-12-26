@@ -10,7 +10,8 @@ public class Test1 {
         Stream<String> str = Stream.of("This is java");
         //Map<Character, List<Character>> collect = str.flatMapToInt(String::chars).mapToObj(n->(char)n).collect(Collectors.groupingBy(n->n));
         str.flatMap(n->Stream.of(n.split(" ")));
-        System.out.println("this is java");
+        
+        System.out.println("this is java and java");
         
     }
 
